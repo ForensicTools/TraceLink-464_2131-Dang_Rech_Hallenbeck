@@ -1,0 +1,19 @@
+
+# Create file list of files in specified folder if an entire folder was input
+if isFolder == true
+	fileList = `ls $folderName`
+
+# Create dict for mdls info of files in folder(s)
+mdlsList = {‘’:’’}
+
+for file in fileList
+	# Take out specific website information relative to our tool. May want to perform more data sanitation before placing in dict
+	mdlsList[$file] = `mdls -name kMDItemWhereFroms $file`
+
+	# Extract distinct (unique) download history locations via the terminal
+	downloadHistory = `sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'select distinct LSQuarantineDataURLString from LSQuarantineEvent'`
+
+	# Compare download history information and mdls information
+
+	for fileInfo in mdlsList
+		somehow grep “downloadHistory” variable for “fileInfo” via terminal or python commands
