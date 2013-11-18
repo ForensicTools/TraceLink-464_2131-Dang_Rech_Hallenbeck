@@ -13,7 +13,7 @@ check = 0
 while(check != 1):
         directory = input("Enter the full (absolute) path of the directory: ")
         if os.path.isdir(directory):        #check if directory exists
-        
+                fileLst = []
                 recur = input("Would you like to recursively look through the path? (y) (n): ")
                 if recur == "y":
                         check = 1
@@ -25,7 +25,6 @@ while(check != 1):
                         	os.system("file " + validFile)
                 elif recur == "n":
                         check = 1
-                        fileLst = []
                         for fileName in listdir(directory):        #Find all the file at current directory
                                 tmpPath = join(directory,fileName)        #add the filename to the full path
                                 if isfile(tmpPath):
