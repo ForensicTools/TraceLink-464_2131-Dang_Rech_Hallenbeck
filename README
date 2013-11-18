@@ -13,15 +13,25 @@ V.    Contact Information
 
 I. Running Instruction
 
+Run the program by entering:
+
+./tracelink.py
+
+into your terminal when the program is located in your CWD.
+If it is located elsewhere simply execute the python file with the correct directory.
 
 II. Known Bugs
+
 Currently in development
 
 
 III. Updates
 
+Currently using os.system - would prefer to use subprocessing.
+
 
 IV. About Us
+
 We are all students majoring in Information Security and Forensics at Rochester 
 Institute of Technology. This project was started because of a class called 
 Computer System Forensics, where we were tasked to create a forensics tool 
