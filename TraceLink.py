@@ -45,4 +45,7 @@ for file in fileLst:
     proc = subprocess.Popen(["mdls", file], stdout=subprocess.PIPE)
     out = str(proc.communicate()[0])
     nWord = out.lstrip("b\'")
-    #Prase string to remove \n and look for web link
+    #Parse string to remove \n and look for web link
+    
+# Extract distinct (unique) download history locations via the terminal
+downloadHistory = os.system("sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* 'select distinct LSQuarantineDataURLString from LSQuarantineEvent'")
