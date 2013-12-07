@@ -21,7 +21,9 @@ II. Running Instruction
 
 Run the program by entering:
 
-python3.3 ./tracelink.py
+python3.3 TraceLink.py [dir]
+
+python3.3 TraceLink.py [option] [dir]
 
 Into your terminal when the program is located in your CWD.
 If it is located elsewhere simply execute the python file with the correct directory.
