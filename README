@@ -38,6 +38,9 @@ Being a non-root user, we were unable to retreive certain information that we ne
 
 IV. Updates
 
+Version 1.6: Remove user input when the program is running.
+	     Add in help feature to run the program correctly.
+
 Version 1.5: Added a nice easy reading format of output.
 
 Version 1.4: Added command for internet history
