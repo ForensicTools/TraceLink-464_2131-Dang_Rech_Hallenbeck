@@ -40,6 +40,7 @@ IV. Updates
 
 Version 1.6: Remove user input when the program is running.
 	     Add in help feature to run the program correctly.
+	     User can now put relative path.
 
 Version 1.5: Added a nice easy reading format of output.
 
