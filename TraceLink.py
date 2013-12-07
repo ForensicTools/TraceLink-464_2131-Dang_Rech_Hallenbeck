@@ -9,30 +9,33 @@ import subprocess
 from os import listdir
 from os.path import isfile, join
 
-check = 0
 fileLst = []
 dictLink = {}
+lenArgv = len(sys.argv)
 
-while(check != 1):
-    directory = input("Enter the full path of the directory: ")
-    if os.path.exists(directory) == True:    #check if directory exists
-        recur = input("Would you like to recursively look through the path? (y) (n): ")
-        if recur == "y":
-            check = 1
+if lenArgv == 1:
+    sys.exit("TraceLink.py Synopsis:\npython3.3 tracelink.py [dir]\npython3.3 tracelink.py [opition] [dir]\n\nCommand line option:\n-r, recursion is enable.\n")
+
+elif 2 <= lenArgv <= 3:
+    if sys.argv[1] == '-r':
+        if lenArgv < 3:
+            sys.exit("Full path of directory was not provide.")
+
+        elif os.path.isdir(sys.argv[2]):
+            directory = os.path.abspath(sys.argv[2])
             for dirName, subdirlist, fileName in os.walk(directory): #Walking through the directory and store full path
                 for name in fileName:
                     lst= dirName + "/" + name
                     fileLst.append(lst)
-        elif recur == "n":
-            check = 1
-            for fileName in listdir(directory): #Find all the file at current directory
-                tmpPath = join(directory,fileName)  #add the filename to the full path
-                if isfile(tmpPath):
-                    fileLst.append(tmpPath)
-        else:
-            print("Not a valid option")
+
+    elif os.path.isdir(sys.argv[1]):
+        directory = os.path.abspath(sys.argv[1])
+        for fileName in listdir(directory): #Find all the file at current directory
+            tmpPath = join(directory,fileName)  #add the filename to the full path
+            if isfile(tmpPath):
+                fileLst.append(tmpPath)
     else:
-        print("Not a valid path")
+        sys.exit("Invalid formatting")
 
 if len(fileLst) == 0:   #Empty list terminate the program
         sys.exit("Current path have no files")
