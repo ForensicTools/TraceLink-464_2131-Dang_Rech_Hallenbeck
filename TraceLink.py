@@ -13,16 +13,17 @@ fileLst = []
 dictLink = {}
 lenArgv = len(sys.argv)
 
+'''Checking the argument on the command line'''
 if lenArgv == 1:
     sys.exit("TraceLink.py Synopsis:\npython3.3 tracelink.py [dir]\npython3.3 tracelink.py [opition] [dir]\n\nCommand line option:\n-r, recursion is enable.\n")
 
 elif 2 <= lenArgv <= 3:
-    if sys.argv[1] == '-r':
-        if lenArgv < 3:
-            sys.exit("Full path of directory was not provide.")
+    if sys.argv[1] == '-r': #check for recursion option
+        if lenArgv < 3: #If there is a path
+            sys.exit("Path of directory was not provide.")
 
-        elif os.path.isdir(sys.argv[2]):
-            directory = os.path.abspath(sys.argv[2])
+        elif os.path.isdir(sys.argv[2]): #check if it is a directory
+            directory = os.path.abspath(sys.argv[2]) #change path to full path
             for dirName, subdirlist, fileName in os.walk(directory): #Walking through the directory and store full path
                 for name in fileName:
                     lst= dirName + "/" + name
