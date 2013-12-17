@@ -57,4 +57,7 @@ for fname in fileLst:
         histList = downloadHistory.split("\n")
         for dlink in histList:
                 if link == dlink:
-                        print("The file " + fname + " was found on this system with the download link " + link + " and was downloaded on this system.\n")
+                        file = open('Output.txt', 'a')
+                        file.write("The file " + fname + " was found on this system with the download link " + link + " and was downloaded on this system.\n")
+						file.close()
+						
