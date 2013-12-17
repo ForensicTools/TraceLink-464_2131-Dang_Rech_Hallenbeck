@@ -59,5 +59,4 @@ for fname in fileLst:
                 if link == dlink:
                         file = open('Output.txt', 'a')
                         file.write("The file " + fname + " was found on this system with the download link " + link + " and was downloaded on this system.\n")
-						file.close()
-						
+                        file.close()
