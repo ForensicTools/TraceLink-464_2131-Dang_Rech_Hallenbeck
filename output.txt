@@ -1,0 +1,16 @@
+[?1034hbash-3.2$ cd ~.[K/Forensics/ra[K[KTraceLink-464_2131-Dang_Rech_Hallenbeck/
+bash-3.2$ python 3[K[K3 TraceLink.py 
+Enter the full path of the directory: /Downoad   loadCopy/
+Would you like to recursively look through the path? (y) (n): n
+The file /DownloadCopy/python-3.3.3-macosx10.6 (1).dmg was found on this system with the download link http://www.python.org/ftp/python/3.3.3/python-3.3.3-macosx10.6.dmg and was downloaded on this system.
+
+The file /DownloadCopy/python-3.3.3-macosx10.6.dmg was found on this system with the download link http://www.python.org/ftp/python/3.3.3/python-3.3.3-macosx10.6.dmg and was downloaded on this system.
+
+The file /DownloadCopy/teeterTotter_V3FIX.jpg was found on this system with the download link https://mail-attachment.googleusercontent.com/attachment/u/1/?ui=2&ik=978c09b197&view=att&th=1405128c744b2e64&attid=0.1&disp=safe&realattid=f_hk0epene0&zw&saduie=AG9B_P9BxQl1jqSxaFAGENsUjg30&sadet=1376529583557&sads=vs0NcEZP78KL-wlBTv1WTc79Wnw&sadssc=1 and was downloaded on this system.
+
+The file /DownloadCopy/What%20is%20a%20language.pdf was found on this system with the download link https://mycourses.rit.edu/d2l/le/content/465207/topics/files/download/2727043/DirectFileTopicDownload and was downloaded on this system.
+
+The file /DownloadCopy/What%20is%20ASL.pdf was found on this system with the download link https://mycourses.rit.edu/d2l/le/content/465207/topics/files/download/2727042/DirectFileTopicDownload and was downloaded on this system.
+
+The file /DownloadCopy/Why%20is%20Learning%20ASL%20a%20Challenge.pdf was found on this system with the download link https://mycourses.rit.edu/d2l/le/content/465207/topics/files/download/2727041/DirectFileTopicDownload and was downloaded on this system.
+

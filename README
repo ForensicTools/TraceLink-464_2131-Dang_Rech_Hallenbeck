@@ -4,33 +4,59 @@ TraceLink-464_2131-Dang_Rech_Hallenbeck
 tool to map downloaded files to their directories
 
 Table of Contents
-I.    Running Instruction
-II.   Known Bugs
-III.  Updates
-IV.   About Us
-V.    Contact Information 
+I.     Requirementst
+II.    Running Instruction
+III.   Known Bugs
+IV.    Updates
+V.     About Us
+VI.    Contact Information 
 
 
-I. Running Instruction
+I. Requirements
+
+Need to have 3.x Python installed to run the script.
+Focuses on Mac OS X for use of commands.
+
+II. Running Instruction
 
 Run the program by entering:
 
-./tracelink.py
+python3.3 TraceLink.py [dir]
 
-into your terminal when the program is located in your CWD.
+python3.3 TraceLink.py [option] [dir]
+
+Into your terminal when the program is located in your CWD.
 If it is located elsewhere simply execute the python file with the correct directory.
 
-II. Known Bugs
+III. Known Bugs
 
-Currently in development
+Must enter full path name e.g. /Users/Marshall/Downloads/
+
+May receive indentation error from Python, to fix (in VIM) run this set command:
+	:set tabstop=4 shiftwidth=4 expandtab
+	
+In testing, not being a root user limited the mdls command information. 
+Being a non-root user, we were unable to retreive certain information that we needed to have.
+
+IV. Updates
+
+Version 1.6: Remove user input when the program is running.
+	     Add in help feature to run the program correctly.
+	     User can now put relative path.
+
+Version 1.5: Added a nice easy reading format of output.
+
+Version 1.4: Added command for internet history
+	     Added check to see if anything was in the specified directory and if not, terminates the program.
+
+Version 1.3: Added MDLS functionality and parsing for website url
+
+Version 1.2: Added option for recursion
+
+Version 1.1: Currently using os.system and subprocess together - need to merge over to pure subprocess
 
 
-III. Updates
-
-Currently using os.system - would prefer to use subprocessing.
-
-
-IV. About Us
+V. About Us
 
 We are all students majoring in Information Security and Forensics at Rochester 
 Institute of Technology. This project was started because of a class called 
@@ -38,9 +64,11 @@ Computer System Forensics, where we were tasked to create a forensics tool
 for the community. 
 
 
-V. Contact Information
+VI. Contact Information
+
 Marshall Hallenbeck
-marshall.hallenbeck@gmail.com
+MarshallHallenbeck.com
+Marshall.Hallenbeck@gmail.com
 
 An Dang
 axd8282@rit.edu
